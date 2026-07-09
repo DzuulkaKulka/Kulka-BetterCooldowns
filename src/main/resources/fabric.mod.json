@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kulka-bettercooldowns",
+  "version": "${version}",
+  "name": "Kulka Better Cooldowns",
+  "description": "Shows item cooldowns on HUD",
+  "authors": [
+    "Kulka"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "icon": "assets/kulka-bettercooldowns/icon.png",
+  "entrypoints": {
+    "client": [
+      "xyz.kulka.client.KulkaBettercooldownsClient"
+    ],
+    "modmenu": [
+      "xyz.kulka.client.KulkaModMenu"
+    ]
+  },
+  "mixins": [
+    "kulka-bettercooldowns.mixins.json",
+    "kulka-bettercooldowns.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*",
+    "yet_another_config_lib_v3": "*",
+    "java": ">=21"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
